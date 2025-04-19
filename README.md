@@ -1,6 +1,4 @@
-Absolutely, Balaji! Here's a polished, professional `README.md` tailored for your project — showcasing features, technologies, benefits, and how to run it.
 
----
 
 ### 📄 `README.md` — Prompt Health Checker
 
