@@ -94,24 +94,6 @@ COHERE_API_KEY = "your_actual_cohere_key"
 streamlit run app.py
 ```
 
----
 
-
-
-
-
-
-
-### ✅ What to Do Next:
-
-1. Create a file in your project: `README.md`
-2. Copy-paste the content above
-3. Commit and push:
-
-```bash
-git add README.md
-git commit -m "Add project README"
-git push
-```
 
 ---
