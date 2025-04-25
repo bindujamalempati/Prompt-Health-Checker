@@ -1,71 +1,68 @@
 
 
-### 📄 `README.md` — Prompt Health Checker
-
-```markdown
 # 🛡️ Prompt Health Checker
 
-**Prompt Health Checker** is an intelligent LLM safety tool that evaluates user-entered prompts for **privacy**, **bias**, **toxicity**, and **prompt injection** risks. It generates safe alternatives using Cohere and flags risky language using smart rule-based and contextual detection.
+**Prompt Health Checker** is a smart LLM safety tool designed to evaluate user-entered prompts for **privacy risks**, **bias**, **toxicity**, and **prompt injection** vulnerabilities. It not only flags risky content but also **suggests safer alternatives** using the Cohere API, making it an essential tool for AI practitioners, enterprises, and researchers focused on safe AI deployment.
 
-> ⚡ Built for AI developers, enterprise compliance teams, researchers, and safety-first LLM startups.
+> ⚡ Built for AI developers, compliance teams, safety researchers, and LLM-driven startups.
 
 ---
 
 ## 🚀 Features
 
 - 🔍 **Multi-Risk Detection**  
-  Identifies PII exposure, gender bias, prompt injection, and offensive content.
+  Detects personally identifiable information (PII), gender or racial bias, toxic language, and prompt injection attempts.
 
 - ✨ **Safe Prompt Rewriter**  
-  Rewrites unsafe prompts using [Cohere API](https://cohere.ai).
+  Automatically rewrites unsafe prompts to safer alternatives using [Cohere's NLP capabilities](https://cohere.ai).
 
-- 🧠 **Smart Rule Matching**  
-  Context-aware detection (e.g., “brutal attack” vs “brutal workout”).
+- 🧠 **Context-Aware Rule Matching**  
+  Understands context to differentiate between benign and harmful uses of language.
 
-- 📊 **Risk Levels**  
-  Flags prompts as `Low`, `Medium`, or `High` risk with explanations.
+- 📊 **Risk Level Classification**  
+  Categorizes each prompt into `Low`, `Medium`, or `High` risk, along with explanations.
 
 - 🧪 **Developer Mode**  
-  Shows matched rules and explanations (toggleable via sidebar).
+  Optional mode to reveal matched rules, detection reasons, and internal insights.
 
-- 📁 **Batch Analyzer**  
-  Upload CSV, PDF, or PNG files and auto-analyze all prompts.
+- 📁 **Batch File Analysis**  
+  Upload `.csv`, `.pdf`, or `.png` files to bulk-analyze multiple prompts at once.
 
-- 📥 **Report Export**  
-  Download result summaries in CSV format.
+- 📥 **Export Reports**  
+  Download prompt analysis summaries as `.csv` reports.
 
-- 🖥️ **Streamlit UI**  
-  Clean, interactive UI for tech and non-tech users.
+- 🖥️ **Interactive Streamlit UI**  
+  Modern, user-friendly interface designed for both technical and non-technical users.
 
 ---
 
 ## 🧑‍💻 Technologies Used
 
-| Stack Layer       | Tools / Libraries                                  |
-|-------------------|----------------------------------------------------|
-| UI                | [Streamlit](https://streamlit.io)                  |
-| NLP & Rewrite     | [Cohere API](https://cohere.ai)                    |
-| File Processing   | `pdfplumber`, `pytesseract`, `Pillow`, `pandas`    |
-| Detection Engine  | `regex`, contextual keyword rules, rule explanations |
-| Deployment Ready  | GitHub, Streamlit Cloud compatible                 |
+| Layer                | Tools / Libraries                                |
+|----------------------|--------------------------------------------------|
+| Frontend UI          | [Streamlit](https://streamlit.io)                |
+| NLP / Rewrite Engine | [Cohere API](https://cohere.ai)                  |
+| File Handling        | `pdfplumber`, `pytesseract`, `Pillow`, `pandas`  |
+| Risk Detection       | `regex` patterns, keyword rules, context matching |
+| Hosting Ready        | GitHub, Streamlit Cloud                         |
 
 ---
 
-## 🎯 Who Will Benefit?
+## 🎯 Ideal Users
 
-| User Type               | Benefit                                                                 |
-|-------------------------|-------------------------------------------------------------------------|
-| 🔐 LLM Developers        | Test prompts before passing to models like GPT, Claude, Cohere.         |
-| 🏢 Enterprise Teams      | Ensure prompts don't leak sensitive or biased data.                     |
-| 🧪 Researchers           | Analyze how humans or LLMs phrase potentially unsafe inputs.            |
-| 🗂️ Product Managers      | Deploy pre-validation tools for user-submitted prompts.                 |
-| 🧑‍🎓 Students/Learners    | Learn prompt engineering, AI ethics, and NLP guardrails.                |
+| Audience                | Purpose                                              |
+|--------------------------|------------------------------------------------------|
+| 🔐 LLM Developers         | Pre-scan prompts before model inference.             |
+| 🏢 Compliance Teams       | Verify prompt safety and prevent data leaks.         |
+| 🧪 AI Ethics Researchers  | Study human and AI-generated unsafe phrasing.        |
+| 🗂️ Product Managers       | Integrate into AI-driven applications' validation steps. |
+| 🧑‍🎓 Students / Learners   | Understand prompt safety and AI content moderation. |
 
 ---
 
-## 🛠️ How to Run Locally
+## 🛠️ Setup Instructions
 
-### 1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/prompt-health-checker.git
@@ -78,22 +75,48 @@ cd prompt-health-checker
 pip install -r requirements.txt
 ```
 
-### 3. Add your Cohere API key
+### 3. Set up your Cohere API key
 
-Edit `.streamlit/secrets.toml`:
+Create a `.streamlit/secrets.toml` file and add:
 
 ```toml
-COHERE_API_KEY = "your_actual_cohere_key"
+COHERE_API_KEY = "your_actual_cohere_api_key"
 ```
 
-> 🔑 Get your API key at https://dashboard.cohere.com
+> 🔑 You can get your Cohere API key by signing up at [Cohere Dashboard](https://dashboard.cohere.com).
 
-### 4. Run the app
+### 4. Launch the app
 
 ```bash
 streamlit run app.py
 ```
 
+---
+
+## 📄 Example Usage
+
+- Type or upload prompts into the UI.
+- View risk scores (`Low`, `Medium`, `High`).
+- Check why a prompt was flagged.
+- Let the tool suggest a safer version of your prompt.
+- Export the analysis report if needed!
+
+---
+
+## 📢 Contributing
+
+I welcome contributions to improve the detection rules, UI/UX, and rewriting engine. Please submit a pull request or open an issue to discuss your ideas.
+
+---
+
+
+
+# 📬 Contact
+
+For questions, feature requests, or feedback, reach out at:
+
+- 📧 Email: malempatibinduja54@gmail.com
 
 
 ---
+
